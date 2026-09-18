@@ -24,7 +24,7 @@ configureCloudinary();
 
 // Connect to database and start server
 connectDB().then(() => {
-  server.listen(PORT, () => {
+  server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
     console.log(`API: http://localhost:${PORT}/api`);
   });
