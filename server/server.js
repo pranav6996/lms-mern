@@ -1,7 +1,9 @@
 const http = require('http');
+const path = require('path');
 const dotenv = require('dotenv');
 
 // Load env vars
+dotenv.config({ path: path.join(__dirname, '.env') });
 dotenv.config();
 
 const app = require('./app');
