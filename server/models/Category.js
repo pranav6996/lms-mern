@@ -24,6 +24,4 @@ const categorySchema = new mongoose.Schema(
   { timestamps: true, toJSON: { virtuals: true } }
 );
 
-categorySchema.index({ name: 1 });
-
 module.exports = mongoose.model('Category', categorySchema);
